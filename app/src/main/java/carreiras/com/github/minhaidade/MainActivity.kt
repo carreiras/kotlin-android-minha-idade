@@ -6,7 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -60,11 +62,17 @@ fun CounterScreen() {
             text = "Aperte os botões para informar a sua idade.",
             fontSize = 12.sp
         )
+
+        Spacer(modifier = Modifier.height(32.dp))
+
         Text(
             text = "21",
             fontSize = 48.sp,
             fontWeight = FontWeight.Bold
         )
+
+        Spacer(modifier = Modifier.height(32.dp))
+
         Row() {
             Button(
                 onClick = {},
